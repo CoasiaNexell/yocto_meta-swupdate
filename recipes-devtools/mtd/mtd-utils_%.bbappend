@@ -14,6 +14,7 @@ do_install_append () {
 	install -m 0644 ${S}/include/libmtd.h ${D}${includedir}
 	install -m 0644 ${S}/include/libscan.h ${D}${includedir}
 	install -m 0644 ${S}/include/libubigen.h ${D}${includedir}
+	install -m 0644 ${S}/include/mtd/ubi-media.h ${D}${includedir}/mtd/
 	ln -s ../libubi.h ${D}${includedir}/mtd/libubi.h
 	ln -s ../libmtd.h ${D}${includedir}/mtd/libmtd.h
 	ln -s ../libscan.h ${D}${includedir}/mtd/libscan.h
